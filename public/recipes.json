@@ -1,0 +1,57 @@
+[
+    {
+      "name": "Spaghetti Carbonara",
+      "id": 1,
+      "image": "https://i.ibb.co/18NmvJt/spaghetti.jpg",
+      "description": "Classic Italian pasta dish made with eggs, cheese, pancetta, and black pepper.",
+      "calories": 450,
+      "preparing_time": 30,
+      "ingredients": ["spaghetti", "eggs", "pancetta", "Parmesan cheese", "black pepper"]
+    },
+    {
+      "name": "Chicken Stir-Fry",
+      "id": 2,
+      "image": "https://i.ibb.co/YcBSJdf/Stir-Fry.jpg",
+      "description": "Quick and flavorful Asian-inspired dish made with chicken, vegetables, and a savory sauce.",
+      "calories": 350,
+      "preparing_time": 25,
+      "ingredients": ["chicken breast", "bell peppers", "broccoli", "soy sauce", "garlic", "ginger", "rice"]
+    },
+    {
+      "name": "Caprese Salad",
+      "id": 3,
+      "image": "https://i.ibb.co/6vMkntH/Caprese-Salad.jpg",
+      "description": "Simple Italian salad featuring fresh tomatoes, mozzarella cheese, basil, and balsamic glaze.",
+      "calories": 200,
+      "preparing_time": 15,
+      "ingredients": ["tomatoes", "fresh mozzarella cheese", "basil leaves", "balsamic glaze"]
+    },
+    {
+      "name": "Beef Tacos",
+      "id": 4,
+      "image": "https://i.ibb.co/2jXFssW/Beef-Tacos.jpg",
+      "description": "Classic Mexican dish made with seasoned beef, lettuce, tomatoes, cheese, and taco shells.",
+      "calories": 400,
+      "preparing_time": 20,
+      "ingredients": ["ground beef", "taco seasoning", "lettuce", "tomatoes", "cheddar cheese", "taco shells"]
+    },
+    {
+      "name": "Vegetable Curry",
+      "id": 5,
+      "image": "https://i.ibb.co/jDSwSrh/Vegetable-Curry.jpg",
+      "description": "Hearty vegetarian curry loaded with a variety of vegetables and aromatic spices.",
+      "calories": 300,
+      "preparing_time": 40,
+      "ingredients": ["potatoes", "carrots", "cauliflower", "peas", "coconut milk", "curry powder", "garlic", "ginger"]
+    },
+    {
+      "name": "Mushroom Risotto",
+      "id": 6,
+      "image": "https://i.ibb.co/8jjjDNL/Mushroom-Risotto-4.jpg",
+      "description": "Creamy Italian rice dish cooked with mushrooms, onions, white wine, and Parmesan cheese.",
+      "calories": 380,
+      "preparing_time": 35,
+      "ingredients": ["Arborio rice", "mushrooms", "onion", "vegetable broth", "white wine", "Parmesan cheese"]
+    }
+  ]
+  
