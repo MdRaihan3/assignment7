@@ -1,5 +1,7 @@
 
 import { useState } from 'react';
+import { ToastContainer, toast } from 'react-toastify';
+  import 'react-toastify/dist/ReactToastify.css';
 import './App.css';
 import Header from './components/Header/Header'
 import Recipes from './components/Recipes/Recipes';
@@ -14,9 +16,15 @@ function App() {
   const [foodCalories, setFoodCalories] = useState(0)
 
   const cooksCount = (cook) => {
-    const newCook = [...addCook, cook]
-    setAddCook(newCook)
-    console.log()
+    console.log(addCook.id)
+    console.log(cook.id)
+    if(addCook.map(ck => ck.id).includes(cook.id)){
+      toast('This item already added');
+    }
+    else{
+      const newCook = [...addCook, cook]
+      setAddCook(newCook)
+    }
   }
 
   const handlePreparing = (cooking, time, calories) => {
@@ -45,6 +53,7 @@ function App() {
           <div>
             <Cooks 
               handlePreparing={handlePreparing} addCook={addCook}></Cooks>
+              <ToastContainer></ToastContainer>
           </div>
           <hr />
           <div className='mt-14'>
