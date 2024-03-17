@@ -24,7 +24,7 @@ const Recipe = ({ recipe,cooksCount}) => {
                 <div className='flex text-center gap-2'><img src={caloriesImg} alt="" /> {calories} calories</div>
             </div>
             <button onClick={()=>cooksCount(recipe)}
-             className='px-4 py-3 rounded-3xl bg-[#0BE58A] font-semibold'>Want to Cook</button>
+             className='px-4 py-3 rounded-3xl bg-[#0BE58A] font-semibold'> Want to Cook </button>
         </div>
     );
 };
