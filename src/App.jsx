@@ -54,8 +54,8 @@ function App() {
             <Currentpreparings currentCooks={currentCooks}></Currentpreparings>
             <hr />
             <div className='pt-6 flex justify-between font-medium'>
-                <p>Total Times = {cookingTime} minutes</p>
-                <p>Total Calories = {foodCalories} calories</p>
+                <p>Total Time = {cookingTime} minutes</p>
+                <p>Total Calorie = {foodCalories} calories</p>
             </div>
           </div>
         </div>
