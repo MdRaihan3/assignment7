@@ -16,8 +16,7 @@ const Currentpreparings = ({ currentCooks }) => {
                 <div className="space-y-3">
                     {currentCooks.map((currentcook, idx) => <Currentpreparing key={idx} idx={idx} currentcook={currentcook}></Currentpreparing>)}
                 </div>
-            </div>
-            
+            </div>          
         </div>
     );
 };

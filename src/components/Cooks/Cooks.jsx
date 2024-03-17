@@ -21,6 +21,7 @@ const Cooks = ({ addCook, handlePreparing }) => {
         </div>
     );
 };
+
 Cooks.propTypes ={
     addCook: PropTypes.array,
 handlePreparing: PropTypes.func

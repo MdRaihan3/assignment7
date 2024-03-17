@@ -13,10 +13,10 @@ const Cook = ({ cook, handlePreparing, idx }) => {
         </div>
     );
 };
+
 Cook.propTypes ={
     cook: PropTypes.object,
 handlePreparing: PropTypes.func,
 idx: PropTypes.number
 }
-
 export default Cook;

@@ -21,7 +21,7 @@ function App() {
       const newCook = [...addCook, cook]
       setAddCook(newCook)
     }
-  }
+  }  
 
   const handlePreparing = (cooking, time, calories) => {
     const remainingCooks = addCook.filter(c => c.id !== cooking.id);
