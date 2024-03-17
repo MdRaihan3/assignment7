@@ -13,7 +13,7 @@ const Currentpreparings = ({ currentCooks }) => {
                     <span className="col-span-3">Calories</span>
                 </div>
                 <div className="space-y-3">
-                    {currentCooks.map(currentcook => <Currentpreparing currentcook={currentcook}></Currentpreparing>)}
+                    {currentCooks.map((currentcook, idx) => <Currentpreparing idx={idx} currentcook={currentcook}></Currentpreparing>)}
                 </div>
             </div>
             

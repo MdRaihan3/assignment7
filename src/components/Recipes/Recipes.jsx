@@ -13,7 +13,7 @@ fetch('recipes.json')
 
     return (
         <div className="grid grid-cols-2 gap-10">
-            {recipes.map(recipe => <Recipe key={recipe.id} cooksCount={cooksCount} recipe={recipe}></Recipe>)}
+            {recipes.map((recipe) => <Recipe key={recipe.id} cooksCount={cooksCount} recipe={recipe}></Recipe>)}
         </div>
     );
 };

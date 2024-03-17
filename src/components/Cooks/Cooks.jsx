@@ -15,7 +15,7 @@ const Cooks = ({ addCook, handlePreparing }) => {
                     <span className="col-span-3"></span>
                 </div>
                 <div className="space-y-3">
-                    {addCook.map(cook => <Cook handlePreparing={handlePreparing} cook={cook}></Cook>)}
+                    {addCook.map((cook, idx) => <Cook idx={idx} handlePreparing={handlePreparing} cook={cook}></Cook>)}
                 </div>
             </div>
         </div>
