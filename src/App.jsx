@@ -9,9 +9,7 @@ import Cooks from './components/Cooks/Cooks';
 import Currentpreparings from './components/Currentpreparings/Currentpreparings';
 function App() {
   const [addCook, setAddCook] = useState([])
-
   const [currentCooks, setCurrentCooks] = useState([])
-
   const [cookingTime, setCookingTime] = useState(0)
   const [foodCalories, setFoodCalories] = useState(0)
 
@@ -40,14 +38,12 @@ function App() {
     setFoodCalories(newFoodCalories)
   }
 
-
   return (
     <>
       <Header></Header>
       <div className='grid grid-cols-7 max-w-7xl mx-auto gap-10 my-6'>
         <div className='col-span-4'>
           <Recipes cooksCount={cooksCount}></Recipes>
-
         </div>
         <div className='border-2 p-4 rounded-2xl col-span-3'>
           <div>
