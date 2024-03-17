@@ -1,4 +1,5 @@
 import Currentpreparing from "../Currentpreparing/Currentpreparing";
+import PropTypes from 'prop-types';
 
 const Currentpreparings = ({ currentCooks }) => {
     return (
@@ -13,12 +14,14 @@ const Currentpreparings = ({ currentCooks }) => {
                     <span className="col-span-3">Calories</span>
                 </div>
                 <div className="space-y-3">
-                    {currentCooks.map((currentcook, idx) => <Currentpreparing idx={idx} currentcook={currentcook}></Currentpreparing>)}
+                    {currentCooks.map((currentcook, idx) => <Currentpreparing key={idx} idx={idx} currentcook={currentcook}></Currentpreparing>)}
                 </div>
             </div>
             
         </div>
     );
 };
-
+Currentpreparings.propTypes = {
+    currentCooks: PropTypes.array.isRequired
+}
 export default Currentpreparings;

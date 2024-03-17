@@ -1,7 +1,7 @@
 import Cook from "../Cook/Cook";
+import PropTypes from 'prop-types';
 
 const Cooks = ({ addCook, handlePreparing }) => {
-
     return (
         <div className="space-y-3">
             <h3 className='text-2xl	font-semibold text-center'>Want to cook: {addCook.length}</h3>
@@ -14,12 +14,15 @@ const Cooks = ({ addCook, handlePreparing }) => {
                     <span className="col-span-2">Calories</span>
                     <span className="col-span-3"></span>
                 </div>
-                <div className="space-y-3">
-                    {addCook.map((cook, idx) => <Cook idx={idx} handlePreparing={handlePreparing} cook={cook}></Cook>)}
+                <div className="space-y-3">                  
+                    {addCook.map((cook, idx) => <Cook key={idx} idx={idx} handlePreparing={handlePreparing} cook={cook}></Cook>)}                  
                 </div>
             </div>
         </div>
     );
 };
-
+Cooks.propTypes ={
+    addCook: PropTypes.array,
+handlePreparing: PropTypes.func
+}
 export default Cooks;

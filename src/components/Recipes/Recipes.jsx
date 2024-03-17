@@ -1,6 +1,7 @@
 import { useEffect } from "react";
 import { useState } from "react";
 import Recipe from "../Recipe/Recipe";
+import PropTypes from 'prop-types';
 
 const Recipes = ({cooksCount}) => {
    
@@ -17,5 +18,7 @@ fetch('recipes.json')
         </div>
     );
 };
-
+Recipes.propTypes = {
+    cooksCount: PropTypes.func.isRequired
+}
 export default Recipes;

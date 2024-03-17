@@ -1,6 +1,7 @@
+import PropTypes from 'prop-types';
 
 const Cook = ({ cook, handlePreparing, idx }) => {
-    const { name, preparing_time, calories, id} = cook
+    const { name, preparing_time, calories} = cook
 
     return (
         <div className="grid grid-cols-11 gap-6">
@@ -12,5 +13,10 @@ const Cook = ({ cook, handlePreparing, idx }) => {
         </div>
     );
 };
+Cook.propTypes ={
+    cook: PropTypes.object,
+handlePreparing: PropTypes.func,
+idx: PropTypes.number
+}
 
 export default Cook;

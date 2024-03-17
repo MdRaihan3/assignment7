@@ -14,8 +14,6 @@ function App() {
   const [foodCalories, setFoodCalories] = useState(0)
 
   const cooksCount = (cook) => {
-    console.log(addCook.id)
-    console.log(cook.id)
     if(addCook.map(ck => ck.id).includes(cook.id)){
       toast('This item already added');
     }
@@ -55,7 +53,7 @@ function App() {
           <div className='mt-14'>
             <Currentpreparings currentCooks={currentCooks}></Currentpreparings>
             <hr />
-            <div className='pt-6 flex justify-between'>
+            <div className='pt-6 flex justify-between font-medium'>
                 <p>Total Times = {cookingTime} minutes</p>
                 <p>Total Calories = {foodCalories} calories</p>
             </div>

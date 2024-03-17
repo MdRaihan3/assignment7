@@ -1,5 +1,6 @@
 import time from '../../assets/images/time.svg';
 import caloriesImg from '../../assets/images/calories.svg';
+import PropTypes from 'prop-types';
 
 const Recipe = ({ recipe,cooksCount}) => {
     const { name, image, description, calories, preparing_time, ingredients } = recipe
@@ -27,5 +28,8 @@ const Recipe = ({ recipe,cooksCount}) => {
         </div>
     );
 };
-
+Recipe.propTypes = {
+    cooksCount: PropTypes.func.isRequired,
+    recipe: PropTypes.object.isRequired
+}
 export default Recipe;
